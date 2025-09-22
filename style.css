@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #f8e1f4 0%, #c7e9f7 100%);
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 24px 0 rgba(160, 132, 202, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a084ca;
+    letter-spacing: 1px;
+}
+.logo span {
+    color: #f7c8e0;
+}
+
+nav {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav-btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, #a084ca 0%, #f7c8e0 100%);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 rgba(160, 132, 202, 0.10);
+    transition: background 0.2s, transform 0.2s;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-btn:hover {
+    background: linear-gradient(90deg, #f7c8e0 0%, #a084ca 100%);
+    transform: translateY(-2px) scale(1.05);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: #a084ca;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.hero h1 span {
+    color: #f7c8e0;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #7b7b7b;
+    margin-bottom: 2.5rem;
+}
+
+.creative-shape {
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle at 60% 40%, #f7c8e0 60%, #a084ca 100%);
+    border-radius: 50% 40% 60% 50% / 60% 50% 40% 50%;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%) scale(1);
+    animation: floatShape 3s ease-in-out infinite alternate;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+@keyframes floatShape {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    100% { transform: translate(-50%, -60%) scale(1.08); }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+}
+.fade-in.delay-1 {
+    animation-delay: 0.7s;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+} 

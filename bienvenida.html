@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        .welcome-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2.5rem 2rem;
+            background: #f3e8ffcc;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+            max-width: 440px;
+            margin: 0 auto;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .welcome-box h1 {
+            color: #a084ca;
+            margin-bottom: 0.5rem;
+            font-size: 2.2rem;
+        }
+        .welcome-box h2 {
+            color: #f7c8e0;
+            margin-bottom: 1.2rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .welcome-box p {
+            color: #7b7b7b;
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+        .info-list {
+            width: 100%;
+            background: #fff8fa;
+            border-radius: 1rem;
+            padding: 1.2rem 1rem;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 2px 8px 0 rgba(160, 132, 202, 0.07);
+        }
+        .info-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .info-list li {
+            color: #a084ca;
+            font-size: 1rem;
+            margin-bottom: 0.7rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .info-list li:last-child {
+            margin-bottom: 0;
+        }
+        .info-list .icon {
+            font-size: 1.2rem;
+        }
+        .welcome-actions {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 1.2rem;
+        }
+        .welcome-actions button {
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 0.8rem;
+            background: linear-gradient(90deg, #a084ca 0%, #f7c8e0 100%);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .welcome-actions button:hover {
+            background: linear-gradient(90deg, #f7c8e0 0%, #a084ca 100%);
+            transform: translateY(-2px) scale(1.05);
+        }
+        .welcome-illustration {
+            position: absolute;
+            right: -40px;
+            bottom: -40px;
+            width: 120px;
+            opacity: 0.18;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-box">
+            <h1>¡Bienvenido!</h1>
+            <h2>Has iniciado sesión correctamente</h2>
+            <p>Nos alegra tenerte de vuelta en nuestra plataforma. Aquí puedes gestionar tu cuenta, explorar nuevas funciones y mantener tus datos seguros.</p>
+            <div class="info-list">
+                <ul>
+                    <li><span class="icon">🔒</span> Seguridad avanzada para tus datos</li>
+                    <li><span class="icon">⚡</span> Acceso rápido y sencillo</li>
+                    <li><span class="icon">🎨</span> Interfaz moderna y amigable</li>
+                    <li><span class="icon">💡</span> Soporte y ayuda personalizada</li>
+                </ul>
+            </div>
+            <div class="welcome-actions">
+                <button onclick="window.location.href='index.html'">Ir al inicio</button>
+                <button onclick="window.location.href='login.html'">Cerrar sesión</button>
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/avatar-2026510_1280.png" alt="Bienvenida" class="welcome-illustration">
+        </div>
+    </div>
+</body>
+</html> 
